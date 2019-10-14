@@ -1,0 +1,19 @@
+{
+    "name": "@n370/npm-publish-slack-webhook",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "npm-publish-slack-webhook": "./index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Dylson Valente Neto <ama@n370.info> (https://n370.info/)",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/n370/npm-publish-slack-webhook.git"
+    },
+    "license": "UNLICENSED"
+}
