@@ -8,7 +8,7 @@ const { URL } = require('url');
 
 const packagejson = require(path.join(process.cwd(), 'package.json'));
 
-const { hostname, port, protocol} = new URL(process.argv[2]);
+const { hostname, protocol, pathname } = new URL(process.argv[2]);
 
 const package = {
     name: `${packagejson.name}@${packagejson.version}`
@@ -20,9 +20,9 @@ const message = {
 
 cp.exec(`npm info ${package.name}`, (err, stdout) => {
     if (stdout.length) {
-        const req = (protocol.match('http') ? http : https).request({
+        const req = (protocol.match('https') ? https : http).request({
             hostname,
-            port,
+            path: pathname,
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
