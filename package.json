@@ -12,8 +12,8 @@
     "keywords": [],
     "author": "Dylson Valente Neto <ama@n370.info> (https://n370.info/)",
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/n370/npm-publish-slack-webhook.git"
+        "type": "git",
+        "url": "https://github.com/n370/npm-publish-slack-webhook.git"
     },
     "license": "UNLICENSED"
 }
