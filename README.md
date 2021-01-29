@@ -3,7 +3,7 @@
 ####  How to use
 
 ```bash
-npm install @n370/npm-publish-slack-webhook <your-slack-webhook-url>
+npm install @n370/npm-publish-slack-webhook
 ```
 
 Open your package's package.json and add a `postpublish` script to it;
